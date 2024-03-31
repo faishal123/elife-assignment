@@ -9,13 +9,8 @@ import { getWeatherAndAtmosphere } from "@/utils/common";
 import { DataProvider } from "@/utils/context";
 import { UnsplashResponseType } from "@/constants/types/unsplash";
 
-// const defaultLat = 35.672855;
-// const defaultLong = 139.817413;
-
-// &appid=${process.env.OPENWEATHER_APIKEY}
-
-const defaultLat = 71.7069;
-const defaultLong = -42.6043;
+const defaultLat = 35.672855;
+const defaultLong = 139.817413;
 
 const Home = async ({
 	params,
