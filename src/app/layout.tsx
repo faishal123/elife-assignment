@@ -19,6 +19,24 @@ export default function RootLayout({
 			lang="en"
 			className="max-l:max-w-[640px] max-l:w-full bg-gray-primary max-w-[1440px] m-auto select-none"
 		>
+			<link rel="shortcut icon" href="/images/favicon.ico" />
+			<link
+				rel="apple-touch-icon"
+				sizes="180x180"
+				href="/images/apple-touch-icon.png"
+			/>
+			<link
+				rel="icon"
+				type="image/png"
+				sizes="32x32"
+				href="/images/favicon-32x32.png"
+			/>
+			<link
+				rel="icon"
+				type="image/png"
+				sizes="16x16"
+				href="/images/favicon-16x16.png"
+			/>
 			<body className={inter.className}>{children}</body>
 		</html>
 	);
