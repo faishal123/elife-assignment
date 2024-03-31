@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DataProvider should match snapshot with Context.Consumer 1`] = `
+<p>
+  test 
+  C
+</p>
+`;
+
+exports[`DataProvider should render correctly 1`] = `
+<p>
+  test
+</p>
+`;
+
+exports[`DataProvider should render with defaultValue 1`] = `
+<p>
+  test
+</p>
+`;
