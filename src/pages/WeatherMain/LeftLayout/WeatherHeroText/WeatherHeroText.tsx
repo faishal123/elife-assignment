@@ -13,6 +13,7 @@ import { useSearchParams } from "next/navigation";
 import { useContext, useState } from "react";
 import Button from "@/components/Button/Button";
 import GetLocation from "@/components/GetLocation/GetLocation";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 const WeatherHeroText = () => {
 	const [windUnit, setWindUnit] = useState<"m/s" | "mph">("m/s");
@@ -69,7 +70,10 @@ const WeatherHeroText = () => {
 							<span
 								data-testid="toggleTempUnit"
 								className="max-xs:text-4xl text-5xl cursor-pointer transition-all p-2 rounded-lg hover:bg-[rgba(0,0,0,.25)] select-none"
-								onClick={toggleTempUnit}
+								onClick={() => {
+									toggleTempUnit && toggleTempUnit();
+									sendGTMEvent({ event: "buttonClicked", value: "xyz" });
+								}}
 							>
 								°{tempUnit}
 							</span>
